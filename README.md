@@ -1,38 +1,22 @@
-# device-asset-frontend
+# 智能设备资产管理系统 - 前端
 
-This template should help get you started developing with Vue 3 in Vite.
+本项目是基于 Vue 3 + Vite 构建的设备资产管理系统前端代码，配套后端为 Spring Boot 项目。系统支持设备信息的增删改查、JWT 身份认证及数据可视化大屏展示。
 
-## Recommended IDE Setup
+## 🛠 技术栈
+- **前端框架**：Vue 3 (Composition API)
+- **构建工具**：Vite
+- **网络请求**：Axios
+- **路由管理**：Vue Router (待完善)
+- **状态管理**：Pinia (待完善)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ 核心功能
+1. **用户登录与鉴权**：对接后端 JWT 接口，将 Token 存储在本地，后续请求自动携带 Token 鉴权。
+2. **设备管理**：设备列表展示、新增设备、删除设备操作。
+3. **接口联调**：封装了 Axios 拦截器，统一处理跨域和 Token 传递。
 
-## Recommended Browser Setup
+## 🚀 快速启动
+确保你本地已安装 Node.js (推荐 v18 及以上)。
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+1. **安装依赖**：
+   ```bash
+   npm install
